@@ -1,0 +1,86 @@
+/* Set the component to occupy the whole viewport */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blanchedalmond;
+    align-items: center;
+  }
+  
+  .component {
+    width: 100vw;
+    height: 100vh;
+    /* position: fixed; */
+    /* top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* overflow-y: scroll; */
+  }
+  
+  .image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    margin-top: 0%;
+  }
+  .pbox{
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  .text {  
+    margin: 5px 0;
+    color: var(--black, #262626);
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 150% */
+    letter-spacing: 1px;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-top: 100px;
+  }
+  
+  .dot {
+    position: relative;
+    width: 21px;
+    height: 21px;
+    background-color:  transparent;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0px 4px 65px 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dot-inner {
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+
+  }
+
+  .dot::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 1px;
+    z-index: -10;
+  }
+  
+  .dot.active {
+    background-color: #000;
+  }
+  
