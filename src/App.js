@@ -6,7 +6,7 @@ import Component4 from "./Component4"
 
 const App = () => {
   return <div style={{height: '100vh', width: '100vw'}}>
-    <HorizontalScroll >
+    <HorizontalScroll reverseScroll={true}>
       <Component2 />
       <Component/>
       <Component3/>
